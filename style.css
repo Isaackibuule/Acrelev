@@ -1,66 +1,63 @@
-body{
+body {
     background: #020410;
-
 }
-* {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-font-family: 'Poppins', sans-serif;
-} 
 
-.header{
-position: fixed;
-top: 0;
-left: 0;
-width: 100%;
-padding: 25px 12.5%;
-background: transparent;
-display: flex;
-justify-content: space-between;
-align-items: center;
-z-index: 100;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 12.5%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
 }
 
 .navbar a {
-position: relative;
-font-size: 16px;
-color: #e4e4e4;
-text-decoration: none;
-font-weight: 500;
-margin-right: 30px;
-
+    position: relative;
+    font-size: 16px;
+    color: #e4e4e4;
+    text-decoration: none;
+    font-weight: 500;
+    margin-right: 30px;
 }
 
 .navbar a::after {
-content: '';
-position: absolute;
-left: 0;
-width:100%;
-height:2px;
-background: #e4e4e4;
-border-radius: 5px;
-bottom: -6px;
-transform: translateY(10px);
-transition: .5s;
-opacity: 0;
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #e4e4e4;
+    border-radius: 5px;
+    bottom: -6px;
+    transform: translateY(10px);
+    transition: .5s;
+    opacity: 0;
 }
 
-.navbar a:hover::after{
-transform: translate(0px);
-opacity: 1;
+.navbar a:hover::after {
+    transform: translate(0px);
+    opacity: 1;
+}
 
- }
-
-.search-bar{
+.search-bar {
     width: 400px;
     height: 45px;
     background: transparent;
-    border:2px, solid, #e4e4e4;
+    border: 2px solid #e4e4e4;
     border-radius: 6px;
     display: flex;
     align-items: center;
-
 }
 
 .background {
@@ -72,21 +69,20 @@ opacity: 1;
     filter: blur(10px);
 }
 
-.search-bar input{
-width: 100%;
-background: transparent;
-border: none;
-outline: none;
-font-size: 16px;
-color: #e4e4e4;
-}
-
-.search-barinput::placeholder{
+.search-bar input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
     color: #e4e4e4;
-
 }
 
-.search-bar button{
+.search-bar input::placeholder {
+    color: #e4e4e4;
+}
+
+.search-bar button {
     width: 40px;
     height: 100%;
     background: transparent;
@@ -94,24 +90,21 @@ color: #e4e4e4;
     align-items: center;
     justify-content: center;
     border: none;
-    outline:none;
+    outline: none;
     cursor: pointer;
     padding-left: 10px;
-   
-} 
-
-.search-bar button .bx.bx-search{
-font-size: 22px;
-color: #e4e4e4;
-
 }
 
+.search-bar button .bx.bx-search {
+    font-size: 22px;
+    color: #e4e4e4;
+}
 
 .container {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform :translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     width: 75%;
     height: 550px;
     background: url('bck1.avif') no-repeat;
@@ -122,25 +115,24 @@ color: #e4e4e4;
 }
 
 .container .content {
-   position: absolute;
-   top: 0;
-   left:0; 
-   width: 58%; 
-   height: 100%;
-   background: transparent;
-   padding: 80px;
-   color: #e4e4e4;
-   display: flex;
-   justify-content: space-between;
-   flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 58%;
+    height: 100%;
+    background: transparent;
+    padding: 80px;
+    color: #e4e4e4;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
 .logo {
-    width: 130px; 
-    height: auto; 
+    width: 130px;
+    height: auto;
 }
 
- 
 .content .logo {
     font-size: 60px;
     color: #FF69B4;
@@ -156,8 +148,8 @@ color: #e4e4e4;
 }
 
 .text-sci p {
-font-size: 16px;
-margin: 20px 0;
+    font-size: 16px;
+    margin: 20px 0;
 }
 
 .social-icons a i {
@@ -165,22 +157,19 @@ margin: 20px 0;
     color: #e4e4e4;
     margin-right: 10px;
     transition: .5s ease;
-
 }
 
-.social-icons a:hover i{
+.social-icons a:hover i {
     transform: scale(1.5);
-
 }
 
 .container .logreg-box {
     position: absolute;
     top: 0;
-    right:0;
+    right: 0;
     width: calc(100% - 58%);
     height: 100%;
-    overflow:hidden;
- 
+    overflow: hidden;
 }
 
 .logreg-box .form-box {
@@ -194,10 +183,8 @@ margin: 20px 0;
     backdrop-filter: blur(20px);
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-    color:#e4e4e4;
+    color: #e4e4e4;
 }
-
-
 
 .logreg-box .form-box.login {
     transform: translateX(0);
@@ -205,24 +192,20 @@ margin: 20px 0;
     transition-delay: .7s;
 }
 
-
 .logreg-box.active .form-box.login {
     transform: translateX(430px);
     transition-delay: 0s;
 }
 
-
 .logreg-box .form-box.register {
     transform: translateX(430px);
     transition: transform .6s ease;
     transition-delay: 0s;
-
 }
 
 .logreg-box.active .form-box.register {
     transform: translateX(0);
     transition-delay: .7s;
-
 }
 
 .form-box h2 {
@@ -230,7 +213,7 @@ margin: 20px 0;
     text-align: center;
 }
 
-.form-box .input-box{
+.form-box .input-box {
     position: relative;
     width: 340px;
     height: 50px;
@@ -248,7 +231,6 @@ margin: 20px 0;
     color: #e4e4e4;
     font-weight: 500;
     padding-right: 28px;
-
 }
 
 .input-box label {
@@ -260,13 +242,11 @@ margin: 20px 0;
     font-weight: 500;
     pointer-events: none;
     transition: .5s ease;
-
 }
 
 .input-box input:focus~label,
 .input-box input:valid~label {
     top: -5px;
-
 }
 
 .input-box .icon {
@@ -295,7 +275,7 @@ margin: 20px 0;
 }
 
 .remember-forgot a:hover {
-text-decoration: underline;
+    text-decoration: underline;
 }
 
 .btn {
@@ -329,6 +309,19 @@ text-decoration: underline;
     text-decoration: underline;
 }
 
+/* Media Queries for Responsive Design */
+
+/* For tablets and larger screens */
+@media (min-width: 768px) {
+    .container {
+        width: 70%;
+    }
+    .navbar a {
+        font-size: 18px;
+    }
+}
+
+/* For mobile devices */
 @media (max-width: 767px) {
     .container {
         width: 90%;
@@ -339,5 +332,29 @@ text-decoration: underline;
     }
     .search-bar {
         width: 100%;
+    }
+    .content .logo {
+        font-size: 40px;
+    }
+    .text-sci h2 {
+        font-size: 30px;
+    }
+    .text-sci h2 span {
+        font-size: 20px;
+    }
+    .text-sci p {
+        font-size: 14px;
+    }
+    .social-icons a i {
+        font-size: 18px;
+    }
+    .form-box {
+        width: 90%;
+    }
+    .input-box {
+        width: 100%;
+    }
+    .btn {
+        font-size: 24px;
     }
 }
